@@ -1,0 +1,155 @@
+# Mediceasy – Online Medical Store Management System
+
+Mediceasy is a Python-based **Online Medical Store Management System** developed as an IP project. The application allows customers to register or log in, browse medicines based on health-related categories, check stock availability, purchase products, generate bills, update inventory, and view sales performance through graphical representation.
+
+## Project Overview
+
+Mediceasy provides a simple command-line interface for managing an online medical store.
+
+The system uses CSV files as a lightweight database for storing:
+
+* User registration details
+* Medicine stock
+* Order information
+
+The project uses **Pandas** for data handling and **Matplotlib** for displaying the store's sales performance.
+
+## Features
+
+### User Registration and Login
+
+* New users can create an account using a username and password.
+* Existing users can log in using their registered credentials.
+* The system checks whether a username is already registered.
+* Incorrect passwords are detected during login.
+
+### Medicine Categories
+
+Users can browse products according to different categories:
+
+* Eye
+* Nose
+* Fracture
+* Skin
+* Scalp
+* Mouth
+* Digestive
+* Respiratory
+* Pain
+
+### Shopping
+
+Users can:
+
+* Select a medical category.
+* Choose a product.
+* Enter the required quantity.
+* Check whether sufficient stock is available.
+* Continue shopping and add multiple products to an order.
+
+### Stock Management
+
+The program:
+
+* Checks available stock before purchase.
+* Prevents orders when the requested quantity exceeds available stock.
+* Deducts the purchased quantity from the available inventory.
+* Updates the `stock.csv` file after the transaction.
+
+### Bill Generation
+
+The system generates a bill containing:
+
+* Item name
+* Quantity
+* Rate
+* Total price
+
+It also calculates the total order amount.
+
+### Sales Performance Visualization
+
+Users can choose to review the store's performance.
+
+The project uses **Matplotlib** to generate a bar graph representing sales across different medical categories for multiple months.
+
+### Order Data Storage
+
+Completed orders are stored in `data.csv` along with:
+
+* Username
+* Date and time of order
+* Total order amount
+* Purchased products
+* Quantity
+* Rate
+
+## Technologies Used
+
+| Technology | Purpose                         |
+| ---------- | ------------------------------- |
+| Python     | Main programming language       |
+| Pandas     | CSV and tabular data handling   |
+| Matplotlib | Sales performance visualization |
+| CSV        | Data and inventory storage      |
+| datetime   | Recording order date and time   |
+
+## Screenshots
+
+### Login and Registration
+
+![Login Screen](images/login.png)
+
+### Medicine Selection
+
+![Shopping Screen](images/shopping.png)
+
+### Bill Generation
+
+![Bill](images/bill.png)
+
+### Performance Graph
+
+![Performance Graph](images/performance.png)
+
+
+
+## Objectives
+
+The main objectives of Mediceasy are:
+
+* To develop a medical store management system using Python.
+* To implement user registration and authentication.
+* To manage medicine inventory using CSV files.
+* To perform stock availability checking.
+* To automate bill calculation.
+* To store customer order information.
+* To visualize sales data using graphs.
+* To demonstrate practical applications of Python, Pandas, and Matplotlib.
+
+## Future Improvements
+
+The project can be further enhanced by:
+
+* Adding a graphical user interface.
+* Using MySQL or another database instead of CSV files.
+* Implementing password encryption.
+* Adding an administrator dashboard.
+* Adding medicine search functionality.
+* Adding expiry-date tracking.
+* Adding customer order history.
+* Adding low-stock alerts.
+* Adding online payment functionality.
+
+## Disclaimer
+
+This project is developed for **educational purposes** as an IP project.
+
+The medicines and prices used in the application are part of the project dataset and should not be considered medical or commercial recommendations.
+
+## Author
+
+**Vishal Kumar Pradhwani**
+
+B.Tech – Computer Science and Engineering
+VIT Vellore
